@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title> Hide/Show Password Login Form</title>
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+
+
+</head>
+
+<body>
+  <div class="header">
+    <a class="log" href="/">Sign in | </a>
+    <a class="sign" href="/signup"> Sign up</a>
+  </header>
+  {% block content %}
+
+  {% endblock %}
+
+  <div class="footer">
+    <h5 align="center">
+      <font family="Arial" color="white">&copy 2019-BSCS & BSIT 1-1</font><br>
+      <font color="white">WESLEYAN UNIVERSITY-PHILIPPINES</font>
+    </h5>
+  </div>
+</body>
+
+</html>

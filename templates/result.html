@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="style.css">
+{% extends 'masterlayout.html' %}
+{% block content %}
+
+
+<table class="tstyle" align="center" cellspacing="8">
+  <h3 align="center">Database Records</h3>
+<tr>
+  <th>Username</th>
+  <th>Email</th>
+  <th>Password</th>
+</tr>
+{% for row in rows %}
+    <tr>
+      <td>{{row['username']}}</td>
+      <td>{{row['email']}}</td>
+      <td>{{row['password']}}</td>
+    </tr>
+
+
+{% endfor %}
+</table>
+{% endblock %}
